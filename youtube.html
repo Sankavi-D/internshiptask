@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<style>
+    
+    .youtube{
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .text{
+        font-size: 1.4rem;
+        font-weight: bolder;
+    }
+    .search{
+        margin-top: 20px;
+    }
+    iframe{
+        margin-top: 20px;
+    }
+    .desc{
+        font-size: 30px;
+    }
+    .like{
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+    .channel{
+        margin-top: 20px;
+    }
+    #myForm{
+        display: none;
+    }
+</style>
+<body>
+    <header>
+        <i class="fa-solid fa-bars fa-xl"></i>
+        <a href="https://www.youtube.com/" target="_blank"><i class="youtube fa-brands fa-youtube fa-2xl" style="color: #d41e11;"></i></a>
+        <span class="text">Youtube</span>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="search" method="get">
+            <button><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #57595b;"></i></button>
+        </div>
+    </header>
+    <main>
+        <div class="frame">
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/qN3wfuPYTI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+            <p class="desc">Leo|Bloody Sweet Promo|Thalapathy Vijay|Lokesh Kanagaraj|Anirudh| </p>
+            <p>67,000,0000 Views</p>
+           <div class="like">
+                <i class="fa-regular fa-thumbs-up fa-lg" style="color: #0f0f10;"></i>
+                <span>390k</span>
+                <i class="fa-regular fa-thumbs-down fa-lg"></i>
+                <span>30k</span>
+                <i class="fa-solid fa-share fa-lg"></i>
+                <span>SHARE</span>
+                <img src="https://t3.ftcdn.net/jpg/06/01/93/46/360_F_601934609_LH6hgFF1XrFTAQug35h8kLSwG4PGIgMv.jpg" alt="three dot" width="20px" height="10px">
+           </div>
+           <div class="channel">
+                <img src="https://imgs.search.brave.com/xXwIry2gKzEoce3wn2FEutVNdBz2wV4Z2EnF406Hn-o/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTYvMTIvU29ueV9N/dXNpY19sb2dvX2xv/Z290eXBlLTY1MHg3/MDAucG5n" alt="sonymusic" height="40px" width="40px">
+                <span>Sony Music-South</span>
+                <button onclick="showForm()">Subscribe</button>
+                <form  id="myForm">
+                    <fieldset>
+                        <legend>Credentials</legend>
+                        <label for="salutation">Salutation:</label>
+                        <select id="salutation" name="salutation">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="miss">Miss</option>
+                            <option value="ms">Ms.</option>
+                            <option value="dr">Dr.</option>
+                        </select><br><br>
+                        <label for="name">First Name:</label>
+                        <input type="text"  id="name" ><br><br>
+                        <label>Last Name:</label>
+                        <input type="lastname"  id="lastname" required><br><br>
+                        <label>Gender:</label>
+                        <input type="radio"  name="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio"  name="Female">
+                        <label for="Female">Female</label><br><br>
+                        <label>Email:</label>
+                        <input type="email"  id="email" required><br><br>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="dob" id="dob"><br><br>
+                        <label for="Address">Address:</label><br>
+                        <textarea name="Address" id="Address" cols="30" rows="3"></textarea><br><br>
+                        <button type="submit">Submit</button>
+                    </fieldset><br><br>        
+                </form>
+           </div>
+           <p>Leo: Bloody Sweet" is an upcoming Indian Tamil-language action thriller film directed by Lokesh Kanagaraj and produced by S. S. Lalit Kumar and Jagadish Palanisamy.</p>
+          
+        </div>
+    </main>
+</body>
+<script>
+    function showForm() {
+        var form = document.getElementById("myForm");
+        form.style.display = "block";
+    }
+</script>
+</html>
